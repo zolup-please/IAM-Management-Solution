@@ -16,15 +16,12 @@ class Webhook:
             return {"status code":result.status_code}
         
 
-if __name__ == '__main__':
+def example_sendWebhook():
     import os
-
     from dotenv import load_dotenv
-
     load_dotenv()
 
-    # How to use webhook module
-    fake_data = {
+    dataFrame = {
         "content" : "message content",
         "embeds" : [
             {
@@ -34,5 +31,8 @@ if __name__ == '__main__':
         ]
     }
 
-    hook = Webhook(fake_data)
+    hook = Webhook(dataFrame)
     hook.send()
+
+if __name__ == '__main__':
+    example_sendWebhook()
