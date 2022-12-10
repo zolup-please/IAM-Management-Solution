@@ -5,7 +5,7 @@ from datetime import datetime
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from scan import distributor
+from .scan import executeScanning
 
 router = APIRouter(prefix="/scanning")
 
@@ -24,8 +24,8 @@ async def ScanningList():
 
 @router.post("/")
 async def StartScanning(checked: ChecklistModel):
-
-    return checked
+    report = executeScanning.executeScanning(checked.dict())
+    return report
 
 @router.get("/recent")
 async def GetRecentReports():
