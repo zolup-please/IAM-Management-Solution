@@ -2,12 +2,12 @@ from .scanner import *
 
 class getScanner:
     d = {
-        "1.1.1" : dummy._dummy,
+        "1.1.1" : credentialRoot.CheckCredentialRoot,
         "1.1.2" : dummy._dummy,
         "1.1.3" : dummy._dummy,
         "1.1.4" : dummy._dummy,
         "1.1.5" : dummy._dummy,
-        "1.1.6" : dummy._dummy,
+        "1.1.6" : sshPublicKey.check_publickey,
         "1.1.7" : dummy._dummy,
         "1.2.1" : MFA.check_Root_User_MFA,
         "1.2.2" : MFA.check_IAM_User_MFA,

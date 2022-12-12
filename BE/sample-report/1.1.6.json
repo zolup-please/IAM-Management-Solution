@@ -1,0 +1,9 @@
+// 1.1.6 User SSH Public Key 2개 활성화
+// 2개 이상의 SSH Public Key가 활성화된 IAM 사용자가 존재합니다.
+{
+    "Detected": true,
+    "Report": {
+        "count": 0,
+        "sshPubilcKey": []
+    }
+}
