@@ -6,7 +6,7 @@ class CheckCredentialRoot(getCredentialReport):
         super().__init__()
         self.check_Root_Using()
     
-    # 1.1.1 credential
+    # 1.1.1 최근 30일 간 root계정을 사용한적 있는지 판단
     def check_Root_Using(self):
         self.result = dict()
         now = datetime.now()
@@ -26,6 +26,23 @@ class CheckCredentialRoot(getCredentialReport):
         else:
             self.result["Detected"] = False
             self.result["Report"] = {"password_last_used" : datetime_str}
+
+#1.1.2 Root 계정에 엑세스 키가 활성화 되어있는지 유무판단
+class CheckAccessKeyRoot(getCredentialReport):
+    def __init__(self):
+        super().__init__()
+        self.check_Root_Active_AccessKey()
+
+    def check_Root_Active_AccessKey(self):
+        self.result = dict()
+        #Root 계정의 여러개 엑세스 키중에 하나라도 활성화 되었있으면 True반환
+        if self.report[0]['access_key_1_active']=='true' or self.report[0]['access_key_2_active']=='true':
+            self.result["Detected"] = True
+        else:
+            self.result["Detected"] = False
+
 if __name__ == '__main__':
     check = CheckCredentialRoot()
+    print(check.result)
+    check = CheckAccessKeyRoot()
     print(check.result)

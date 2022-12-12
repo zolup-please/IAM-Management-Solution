@@ -3,7 +3,7 @@ from .scanner import *
 class getScanner:
     d = {
         "1.1.1" : credentialRoot.CheckCredentialRoot,
-        "1.1.2" : dummy._dummy,
+        "1.1.2" : credentialRoot.CheckAccessKeyRoot,
         "1.1.3" : dummy._dummy,
         "1.1.4" : dummy._dummy,
         "1.1.5" : dummy._dummy,
