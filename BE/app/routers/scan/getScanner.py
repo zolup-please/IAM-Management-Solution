@@ -31,7 +31,7 @@ class getScanner:
         "2.3.3" : dummy._dummy,
         "2.3.4" : dummy._dummy,
         "2.4.1" : dummy._dummy,
-        "2.4.2" : dummy._dummy
+        "2.4.2" : duplicationPolicy.DuplicatedPolicy
     }
     def __init__(self, checked:list):
         self.scannerList = dict()
