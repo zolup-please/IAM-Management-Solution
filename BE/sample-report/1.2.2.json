@@ -1,0 +1,41 @@
+// 1.2.2 IAM 사용자의 MFA가 비활성화 되어 있습니다.
+{
+    "Detected": true,
+    "Report": {
+      "count": 32, // MFA가 비활성화 된 IAM 계정 수
+      "DisabledMfaUser": [ // 비활성화 된 IAM 계정
+        "beak",
+        "CT_admin",
+        "groupA_0",
+        "groupA_1",
+        "groupA_2",
+        "groupA_3",
+        "groupA_4",
+        "groupB_0",
+        "groupB_1",
+        "groupB_2",
+        "groupB_3",
+        "groupB_4",
+        "groupC_0",
+        "groupC_1",
+        "groupC_2",
+        "groupC_3",
+        "groupC_4",
+        "groupD_0",
+        "groupD_1",
+        "groupD_2",
+        "groupD_3",
+        "groupD_4",
+        "groupE_0",
+        "groupE_1",
+        "groupE_2",
+        "groupE_3",
+        "groupE_4",
+        "MyUser",
+        "user0",
+        "user1",
+        "user2",
+        "yoonchan"
+      ]
+    }
+}
