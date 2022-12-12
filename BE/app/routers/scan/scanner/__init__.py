@@ -1,4 +1,3 @@
-__all__ = ['dummy', 'rootMFA', 'userMFA']
+__all__ = ['dummy', 'MFA']
 
-# rootMFA : 1.2.1
-# userMFA : 1.2.2
+# MFA : 1.2
