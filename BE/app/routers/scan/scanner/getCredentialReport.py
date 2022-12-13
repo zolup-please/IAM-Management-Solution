@@ -10,10 +10,14 @@ iam = boto3.resource('iam')
 client = boto3.client('iam')
 
 class getCredentialReport:
-
+    rootReport = None
+    userReport = None
     def __init__(self):
         response = client.generate_credential_report()
         self.report = self.get_report()
+        if(getCredentialReport.rootReport == None):
+            getCredentialReport.rootReport = self.report[0]
+            getCredentialReport.userReport = self.report[1:]
 
     def get_credential_report(self):
         try:
