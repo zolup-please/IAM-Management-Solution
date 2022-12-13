@@ -16,15 +16,19 @@ def executeScanning(scanRequest: dict):
     g = getScanner(checked)
     scannerList = g.scannerList
 
-
     # 레포트 생성 및 스캔 실행
     report = {}
-    report['scannedTime'] = datetime.now()
+    report['Date'] = datetime.now()
+    report['Checked'] = len(checked)
+    report['Detected'] = 0
     report['checkedList'] = checked
     report['report'] = {}
     for _id, scanner in scannerList.items():
         instance = scanner()
         report['report'][_id] = instance.result
+
+        if(instance.result['Detected'] == True):
+            report['Detected'] = report['Detected'] + 1
 
     return report
 

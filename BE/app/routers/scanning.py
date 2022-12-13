@@ -10,7 +10,7 @@ from .scan import executeScanning
 router = APIRouter(prefix="/scanning")
 
 class ChecklistModel(BaseModel):
-    scannedDatetime: datetime = datetime.now()
+    Date: datetime = datetime.now()
     checkedCount: int
     checkedList: list = []
     
@@ -25,6 +25,7 @@ async def ScanningList():
 @router.post("/")
 async def StartScanning(checked: ChecklistModel):
     report = executeScanning.executeScanning(checked.dict())
+
     return report
 
 @router.get("/recent")
