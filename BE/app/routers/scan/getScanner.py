@@ -16,7 +16,7 @@ class getScanner:
         "1.3.3" : PasswordPolicy.MinPasswordLength,
         "1.3.4" : PasswordPolicy.PasswordReusePrevention,
         "1.3.5" : PasswordPolicy.MaxPasswordAge,
-        "1.3.6" : dummy._dummy,
+        "1.3.6" : PasswordLifeSpan.checkLifeSpan,
         "1.4.1" : dummy._dummy,
         "1.4.2" : dummy._dummy,
         "2.1.1" : dummy._dummy,
