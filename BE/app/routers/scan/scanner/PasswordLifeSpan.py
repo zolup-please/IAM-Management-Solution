@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 
-from getCredentialReport import getCredentialReport
+from .getCredentialReport import getCredentialReport
 
 class checkLifeSpan(getCredentialReport):
     def __init__(self):
