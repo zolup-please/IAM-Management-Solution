@@ -41,7 +41,7 @@ class CheckAccessKeyRoot(getCredentialReport):
         else:
             self.result["Detected"] = False
 
-class ExpiredRootAccessKey(getCredentialReport):
+class ExpiredAccessKey(getCredentialReport):
     def __init__(self):
         super().__init__()
         self.scanning()
@@ -73,5 +73,5 @@ class ExpiredRootAccessKey(getCredentialReport):
     
 
 if __name__ == '__main__':
-    check = ExpiredRootAccessKey()
+    check = ExpiredAccessKey()
     print(check.result)
