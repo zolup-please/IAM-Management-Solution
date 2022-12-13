@@ -1,0 +1,16 @@
+// 항목 : 미연결 IAM GROUP	
+// IAM GROUP에 연결된 IAM USER가 없습니다.
+
+// GROUP 4개 감지
+{
+    "Detected": true,
+    "Report": {
+      "GroupCount": 4,
+      "GroupName": [
+        "group2",
+        "group3",
+        "group4",
+        "group5"
+      ]
+    }
+  }

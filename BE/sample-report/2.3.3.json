@@ -1,0 +1,24 @@
+// 항목 : 미연결 IAM ROLE
+//IAM ROLE에 연결된 관리형/인라인 정책이 없습니다.
+
+// 관리형 정책 0개, 인라인 정책 10개 감지
+{
+    "Detected": true,
+    "Report": {
+      "ManagedCount": 0,
+      "Managed_Roles": [],
+      "InlineCount": 10,
+      "Inline_Roles": [
+        "AWSServiceRoleForAmazonGuardDuty",
+        "AWSServiceRoleForAmazonGuardDutyMalwareProtection",
+        "AWSServiceRoleForAPIGateway",
+        "AWSServiceRoleForConfig",
+        "AWSServiceRoleForECS",
+        "AWSServiceRoleForKeyManagementServiceMultiRegionKeys",
+        "AWSServiceRoleForSupport",
+        "AWSServiceRoleForTrustedAdvisor",
+        "CloudTrailLake-ap-northeast-2-test",
+        "schedulerTest-role-lw4xhgsa"
+      ]
+    }
+  }

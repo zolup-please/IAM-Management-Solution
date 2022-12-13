@@ -1,0 +1,72 @@
+// 항목 : 미연결 IAM USER
+//IAM USER에 연결된 관리형/인라인 정책이 없습니다.
+
+// 관리형 정책 25개, 인라인 정책 32개 감지
+{
+    "Detected": true,
+    "Report": {
+      "ManagedCount": 25,
+      "Managed_Users": [
+        "groupA_0",
+        "groupA_1",
+        "groupA_2",
+        "groupA_3",
+        "groupA_4",
+        "groupB_0",
+        "groupB_1",
+        "groupB_2",
+        "groupB_3",
+        "groupB_4",
+        "groupC_0",
+        "groupC_1",
+        "groupC_2",
+        "groupC_3",
+        "groupC_4",
+        "groupD_0",
+        "groupD_1",
+        "groupD_2",
+        "groupD_3",
+        "groupD_4",
+        "groupE_0",
+        "groupE_1",
+        "groupE_2",
+        "groupE_3",
+        "groupE_4"
+      ],
+      "InlineCount": 32,
+      "Inline_Users": [
+        "beak",
+        "CT_admin",
+        "groupA_0",
+        "groupA_1",
+        "groupA_2",
+        "groupA_3",
+        "groupA_4",
+        "groupB_0",
+        "groupB_1",
+        "groupB_2",
+        "groupB_3",
+        "groupB_4",
+        "groupC_0",
+        "groupC_1",
+        "groupC_2",
+        "groupC_3",
+        "groupC_4",
+        "groupD_0",
+        "groupD_1",
+        "groupD_2",
+        "groupD_3",
+        "groupD_4",
+        "groupE_0",
+        "groupE_1",
+        "groupE_2",
+        "groupE_3",
+        "groupE_4",
+        "MyUser",
+        "user0",
+        "user1",
+        "user2",
+        "yoonchan"
+      ]
+    }
+  }

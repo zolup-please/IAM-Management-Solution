@@ -26,10 +26,10 @@ class getScanner:
         "2.2.2" : dummy._dummy,
         "2.2.3" : dummy._dummy,
         "2.2.4" : dummy._dummy,
-        "2.3.1" : dummy._dummy,
-        "2.3.2" : dummy._dummy,
-        "2.3.3" : dummy._dummy,
-        "2.3.4" : dummy._dummy,
+        "2.3.1" : unConnectedUser.unConnectedUser,
+        "2.3.2" : unConnectedGroup.unConnectedGroup,
+        "2.3.3" : unConnectedRole.unConnectedRole,
+        "2.3.4" : unConnectedPolicy.unConnectedPolicy,
         "2.4.1" : dummy._dummy,
         "2.4.2" : duplicationPolicy.DuplicatedPolicy
     }
