@@ -1,4 +1,4 @@
-// 1.2.1 AWS 계정 Root 사용자의 MFA가 비활성화되어 있습니다
+// 항목 : 1.2.1 AWS 계정 Root 사용자의 MFA가 비활성화되어 있습니다
 // 해당 report는 Root 계정의 MFA의 유무만 확인하기 때문에 report key가 없습니다.
 {
     "Detected": true

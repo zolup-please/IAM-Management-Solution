@@ -1,0 +1,8 @@
+// 항목 : 강력한 IAM 암호 정책을 설정하지 않았습니다.
+// 강력한 암호 정책을 설정하지 않고 있습니다.
+{
+    "Detected": true,
+    "Report": {
+      "description": "Hard expirie is not set."
+    }
+  }

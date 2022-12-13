@@ -1,0 +1,8 @@
+// 항목 : IAM 암호 정책이 14자 이상의 암호를 요구하도록 설정하지 않았습니다.
+// IAM 암호 정책이 14자 이상의 암호를 요구하도록 요구 되지 않고 있습니다.
+{
+    "Detected": true,
+    "Report": {
+      "description": "The current setting of \"minimum_password_length\" is \u0006 and less than 14."
+    }
+}
