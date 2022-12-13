@@ -6,7 +6,7 @@ class getScanner:
         "1.1.2" : credentialRoot.CheckAccessKeyRoot,
         "1.1.3" : credentialRoot.ExpiredAccessKey,
         "1.1.4" : credentialIAM._dummy,
-        "1.1.5" : credentialIAM._dummy,
+        "1.1.5" : credentialIAM.SecondKeyActivated,
         "1.1.6" : sshPublicKey.check_publickey,
         "1.1.7" : dummy._dummy,
         "1.2.1" : MFA.check_Root_User_MFA,
