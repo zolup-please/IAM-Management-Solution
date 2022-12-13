@@ -9,7 +9,7 @@ __all__ = [
     'duplicationPolicy'
     ]
 
-# credentialRoot : 1.1.1, 1.1.2
+# credentialRoot : 1.1.1 ~ 1.1.3
 # sshPublicKey : 1.1.6
 # MFA : 1.2
 # PasswordPolicy : 1.3.1 ~ 1.3.5

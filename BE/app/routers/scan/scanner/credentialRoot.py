@@ -41,8 +41,37 @@ class CheckAccessKeyRoot(getCredentialReport):
         else:
             self.result["Detected"] = False
 
+class ExpiredRootAccessKey(getCredentialReport):
+    def __init__(self):
+        super().__init__()
+        self.scanning()
+    
+    def scanning(self):
+        self.result = dict()
+        rootReport = getCredentialReport.rootReport
+        report = {}
+        Detected = False
+        if(rootReport['access_key_1_active'] == 'true'):
+            Detected = self._checkRotation(rootReport['access_key_1_last_rotated'])
+            if(Detected):
+                    report['access_key_1_last_rotated'] = rootReport['access_key_1_last_rotated']
+
+        if(rootReport['access_key_2_active'] == 'true'):
+            Detected = self._checkRotation(rootReport['access_key_2_last_rotated'])
+            if(Detected):
+                    report['access_key_2_last_rotated'] = rootReport['access_key_2_last_rotated']
+        
+        self.result['Detected'] = Detected
+        self.result['Report'] = report
+
+    def _checkRotation(self, date_str):
+        date = datetime.strptime(date_str[:-6], '%Y-%m-%dT%H:%M:%S')
+        if(datetime.now() - date).days > 30:
+            return True
+        else:
+            return False
+    
+
 if __name__ == '__main__':
-    check = CheckCredentialRoot()
-    print(check.result)
-    check = CheckAccessKeyRoot()
+    check = ExpiredRootAccessKey()
     print(check.result)
