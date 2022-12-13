@@ -24,7 +24,7 @@ class getScanner:
         "2.1.3" : dummy._dummy,
         "2.2.1" : dummy._dummy,
         "2.2.2" : unUsedGroup.unUsedGroup,
-        "2.2.3" : dummy._dummy,
+        "2.2.3" : unUsedRole.unUsedRole,
         "2.2.4" : unUsedPolicy.unUsedPolicy,
         "2.3.1" : unConnectedUser.unConnectedUser,
         "2.3.2" : unConnectedGroup.unConnectedGroup,

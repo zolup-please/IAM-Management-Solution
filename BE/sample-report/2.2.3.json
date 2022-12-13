@@ -1,0 +1,20 @@
+// 항목 : 미사용 IAM ROLE
+// 90일 이내 IAM ROLE을 사용한 기록이 없습니다.
+
+// 아예 접근 안한 ROLE 6개 감지, 90일 넘은 ROLE 0개 감지
+
+{
+    "Detected": true,
+    "Report": {
+      "RoleCount": 6,
+      "NoneAccessRoleName": [
+        "AWSServiceRoleForAmazonGuardDutyMalwareProtection",
+        "AWSServiceRoleForAPIGateway",
+        "AWSServiceRoleForECS",
+        "AWSServiceRoleForKeyManagementServiceMultiRegionKeys",
+        "AWSServiceRoleForTrustedAdvisor",
+        "schedulerTest-role-lw4xhgsa"
+      ],
+      "OverDateRoleName": []
+    }
+  }

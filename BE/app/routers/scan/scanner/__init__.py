@@ -13,7 +13,8 @@ __all__ = [
     'unConnectedRole',
     'unConnectedUser',
     'unUsedPolicy',
-    'unUsedGroup'
+    'unUsedGroup',
+    'unUsedRole'
     ]
 
 # credentialRoot    : 1.1.1 ~ 1.1.3
@@ -28,6 +29,7 @@ __all__ = [
 # Certificate       : 1.4
 
 # unUsedPolicy      : 2.2.2
+# unUsedRole        : 2.2.3
 # unUsedPolicy      : 2.2.4
 
 # unConnectedUser   : 2.3.1
