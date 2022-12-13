@@ -14,7 +14,10 @@ __all__ = [
     'unConnectedUser',
     'unUsedPolicy',
     'unUsedGroup',
-    'unUsedRole'
+    'unUsedRole',
+    'overAuthorityGroup',
+    'overAuthorityRole',
+    'overAuthorityUser'
     ]
 
 # credentialRoot    : 1.1.1 ~ 1.1.3
@@ -27,6 +30,10 @@ __all__ = [
 # PasswordLifeSpan  : 1.3.6
 
 # Certificate       : 1.4
+
+# overAuthorityUser : 2.1.1
+# overAuthorityGroup: 2.1.2
+# overAuthorityRole : 2.1.3
 
 # unUsedPolicy      : 2.2.2
 # unUsedRole        : 2.2.3

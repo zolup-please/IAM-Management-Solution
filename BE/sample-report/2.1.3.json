@@ -1,0 +1,15 @@
+//항목 : 과도한 권한 IAM ROLE
+//"IAM Role에게 연결된 서비스, 권한 리소스 중 90일 이내 사용하지 않은 것이 존재합니다."
+
+//Service가 아예 없는 Role 2개 감지, 90일이 넘은 Service는 0개 감지
+{
+    "Detected": true,
+    "Report": {
+      "RoleCount": 2,
+      "NotExistServiceRole": [
+        "AWSServiceRoleForConfig",
+        "AWSServiceRoleForSupport"
+      ],
+      "OverDateServiceName": []
+    }
+  }

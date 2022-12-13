@@ -1,0 +1,18 @@
+//항목 : 과도한 권한 IAM USER	
+//"IAM USER에게 연결된 서비스, 권한 리소스 중 90일 이내 사용하지 않은 것이 존재합니다."
+
+//Service가 아예 없는 유저 5명 감지, 90일이 넘은 Service는 0개 감지
+{
+    "Detected": true,
+    "Report": {
+      "UserCount": 5,
+      "NotExistServiceUser": [
+        "beak",
+        "MyUser",
+        "user0",
+        "user1",
+        "user2"
+      ],
+      "OverDateServiceName": []
+    }
+  }

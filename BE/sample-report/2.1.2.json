@@ -1,0 +1,16 @@
+//항목 : 과도한 권한 IAM Group	
+//"IAM Group에게 연결된 서비스, 권한 리소스 중 90일 이내 사용하지 않은 것이 존재합니다."
+
+//Service가 아예 없는 Group 3개 감지, 90일이 넘은 Service는 0개 감지
+{
+    "Detected": true,
+    "Report": {
+      "GroupCount": 3,
+      "NotExistServiceGroup": [
+        "capstoneGroup",
+        "CloudTrail-Admin",
+        "group1"
+      ],
+      "OverDateServiceName": []
+    }
+  }
