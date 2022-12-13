@@ -1,0 +1,16 @@
+// 항목 : 미사용 IAM GROUP	
+// 90일 이내 해당 IAM GROUP을 이용하여 AWS 서비스에서 접근한 기록이 없습니다.
+
+// 아예 접근 안한 그룹 3개 감지, 90일 이상 그룹 0개 감지
+{
+    "Detected": true,
+    "Report": {
+      "GroupCount": 3,
+      "NoneAccessGroupName": [
+        "capstoneGroup",
+        "CloudTrail-Admin",
+        "group1"
+      ],
+      "OverDateGroupName": []
+    }
+  }

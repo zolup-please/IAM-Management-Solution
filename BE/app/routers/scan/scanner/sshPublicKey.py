@@ -50,9 +50,9 @@ class SshPublicKeyExpiration:
                 value.append(i)
 
         if not value:
-            self.result["detected"] = False
+            self.result["Detected"] = False
         else:
-            self.result["detected"] = True
+            self.result["Detected"] = True
             self.result["Report"] = value
 
 if __name__ == '__main__':

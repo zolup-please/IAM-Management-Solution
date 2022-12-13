@@ -1,0 +1,16 @@
+// 항목 : 미연결 IAM POLICY	
+// 고객 관리형 IAM POLICY에 연결된 IAM 엔티티가 없습니다.
+
+// IAM 엔티티가 없는 고객 관리형 POLICY 4개 감지
+{
+    "Detected": true,
+    "Report": {
+      "PolicyCount": 4,
+      "PolicyName": [
+        "AWSLambdaBasicExecutionRole-712a8a58-d336-4e7d-ad9c-ab748d160a42",
+        "CloudTrailPolicyForCloudWatchLogs_fa5b1af7-1c4a-4694-b9d4-16b69f51b452",
+        "LakeImport-37dfa706-82ea-47e6-95d9-ca022210119d",
+        "test_policy"
+      ]
+    }
+  }
