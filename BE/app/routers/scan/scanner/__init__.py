@@ -11,8 +11,8 @@ __all__ = [
     ]
 
 # credentialRoot    : 1.1.1 ~ 1.1.3
-# credentialIAM     : 1.1.4 ~
-# sshPublicKey      : 1.1.6
+# credentialIAM     : 1.1.4 ~ 1.1.5
+# sshPublicKey      : 1.1.6 ~1.1.7
 # MFA               : 1.2
 # PasswordPolicy    : 1.3.1 ~ 1.3.5
 # PasswordLifeSpan  : 1.3.6

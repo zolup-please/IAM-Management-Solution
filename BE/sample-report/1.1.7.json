@@ -1,0 +1,5 @@
+// 항목 : SSH Public Key가 90일 이내에 재발급 되지 않았습니다.
+// SSh public Key가 90이내에 재발급 되었습니다.
+{
+    "detected": false
+}
