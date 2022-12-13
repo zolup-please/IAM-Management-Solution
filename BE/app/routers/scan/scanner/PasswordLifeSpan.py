@@ -1,14 +1,23 @@
 from datetime import datetime, timedelta
 
 from .getCredentialReport import getCredentialReport
+from .PasswordPolicy import getPasswordPolicy
 
 class checkLifeSpan(getCredentialReport):
     def __init__(self):
-        super().__init__()
-        self.scanning()
+        self.result = dict()
+        pwPolicy = getPasswordPolicy()
+
+        if(not pwPolicy.pw_policy):
+            self.result['Detected'] = True
+            report = { 'description' : 'Password policy is not defined.' }
+            self.result['Report'] = report
+
+        else:
+            super().__init__()
+            self.scanning()
     
     def scanning(self):
-        self.result = dict()
         now = datetime.now()
         oneWeek = timedelta(days=7)
         count = 0
