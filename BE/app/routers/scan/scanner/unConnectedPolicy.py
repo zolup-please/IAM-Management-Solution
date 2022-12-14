@@ -55,9 +55,9 @@ class unConnectedPolicy:
             self.result["Detected"] = False
         else:
             self.result["Detected"] = True
-        self.result["Report"] = dict()
-        self.result["Report"]["PolicyCount"] = countPolicy
-        self.result["Report"].update(self.sub)
+            self.result["Report"] = dict()
+            self.result["Report"]["PolicyCount"] = countPolicy
+            self.result["Report"].update(self.sub)
 
         
                 

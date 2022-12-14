@@ -38,8 +38,8 @@ async def StartScanning(checked: ChecklistModel):
         print(item['Date'])
     del mongo    
     
-    return "Scanning finished"
-    # return report
+    # return "Scanning finished"
+    return report
 
 @router.get("/recent")
 async def GetRecentReports():

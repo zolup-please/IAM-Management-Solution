@@ -40,9 +40,9 @@ class unConnectedGroup:
             self.result["Detected"] = False
         else:
             self.result["Detected"] = True
-        self.result["Report"] = dict()
-        self.result["Report"]["GroupCount"] = countGroup
-        self.result["Report"].update(self.sub)    
+            self.result["Report"] = dict()
+            self.result["Report"]["GroupCount"] = countGroup
+            self.result["Report"].update(self.sub)    
 
 if __name__ == '__main__':
     example = unConnectedGroup()

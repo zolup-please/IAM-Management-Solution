@@ -58,11 +58,11 @@ class unConnectedUser:
             self.result["Detected"] = False
         else:
             self.result["Detected"] = True
-        self.result["Report"] = dict()
-        self.result["Report"]["ManagedCount"] = countManaged
-        self.result["Report"].update(self.managed)
-        self.result["Report"]["InlineCount"] = countInline
-        self.result["Report"].update(self.inline)
+            self.result["Report"] = dict()
+            self.result["Report"]["ManagedCount"] = countManaged
+            self.result["Report"].update(self.managed)
+            self.result["Report"]["InlineCount"] = countInline
+            self.result["Report"].update(self.inline)
 
 if __name__ == '__main__':
     example = unConnectedUser()
