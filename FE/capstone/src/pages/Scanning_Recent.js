@@ -43,10 +43,9 @@ function Scanning_Recent() {
           <div style={{width:"100%"}}>
           <Menu>
         { Array.from(data).map((e)=>(
-          <Typography component="div" variant="h6">
             <SubMenu id="scan" label={
             <SnackbarContent
-            message={e.Date}
+            message={<Typography component="div" variant="h6">{e.Date}</Typography>}
             action={<Stack spacing={4} direction="row">
             <ButtonGroup>
               <Button variant="contained" color="success">
@@ -63,12 +62,12 @@ function Scanning_Recent() {
             </ButtonGroup>
           </Stack>}
           />
-          } style={{backgroundColor: "white"}}>
-                <MenuItem style={{height: 600}} id="list-item">
+          }>
+                <MenuItem style={{height: "100%"}} id="list-item">
                   <Report_Data report={e.report}></Report_Data>
                 </MenuItem>
               </SubMenu>
-          </Typography>
+            
           ))}
         </Menu>
       </div>

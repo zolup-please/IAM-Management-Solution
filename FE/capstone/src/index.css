@@ -11,12 +11,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
 }
+#scan .ps-submenu-expand-icon{
+  display: none;
+}
 #Menu{
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
   background-color: #EEEEF2;
 }
 #item:hover{
-  background-color: "white";
+  background-color: white;
+  cursor: default;
 }
 .Sidebar {
 
