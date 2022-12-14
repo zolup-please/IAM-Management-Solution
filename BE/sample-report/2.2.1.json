@@ -1,0 +1,15 @@
+// 항목 : 90일 이내 액세스 키나 패스워드를 통해 IAM 사용자가 접속한 기록이 없습니다.
+// 90일동안 접속이나 사용이 기록이 없는 사용자가 있습니다
+
+{
+    "Detected": true, 
+    "Report": {
+        "DetectedUserCount": 28, 
+        "DetectedUser": [
+            "beak", "CT_admin", "groupA_0", "groupA_1", "groupA_2", "groupA_3", 
+            "groupA_4", "groupB_0", "groupB_1", "groupB_2", "groupB_3", "groupB_4", "groupC_0", 
+            "groupC_1", "groupC_2", "groupC_3", "groupC_4", "groupD_0", "groupD_1", "groupD_2", 
+            "groupD_3", "groupD_4", "groupE_0", "groupE_1", "groupE_2", "groupE_3", "groupE_4", "MyUser"
+        ]
+    }
+}
