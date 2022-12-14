@@ -3,7 +3,7 @@ import sys
 sys.path.append("../../")
 from modules.mongoHandler import MongoHandler
 
-def combine():
+def getDash():
     template = {
         "RecentReport": {
             "Counts": 0,
@@ -52,6 +52,6 @@ def loadReport():
 
 
 if __name__=='__main__':
-    b = combine()
+    b = getDash()
 
     print(b)
