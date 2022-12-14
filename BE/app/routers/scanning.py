@@ -5,7 +5,7 @@ from datetime import datetime
 from fastapi import APIRouter
 from pydantic import BaseModel
 
-from .scan import executeScanning
+from .scan import executeScanning, getRecent
 
 import sys
 sys.path.append("..")
@@ -43,4 +43,4 @@ async def StartScanning(checked: ChecklistModel):
 
 @router.get("/recent")
 async def GetRecentReports():
-    pass
+    return getRecent.getRecent()
