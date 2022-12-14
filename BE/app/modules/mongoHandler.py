@@ -16,8 +16,9 @@ class MongoHandler:
         self._mongo_db = self._mongo_client[self._database]
         self._mongo_collection = self._mongo_db[self._collection]
 
+    # condition
     def count(self):
-        return self._mongo_collection.count()
+        return self._mongo_collection.count_documents()
         
     def insert(self, data):
         if isinstance(data, list):
