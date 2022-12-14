@@ -1,7 +1,6 @@
 from datetime import datetime, timedelta
 from .getCredentialReport import getCredentialReport
 
-#2_3_3 미연결 User
 class unUsingUsered(getCredentialReport):
     def __init__(self):
         super().__init__()
