@@ -17,7 +17,8 @@ __all__ = [
     'unUsedRole',
     'overAuthorityGroup',
     'overAuthorityRole',
-    'overAuthorityUser'
+    'overAuthorityUser',
+    'unUsingiam'
     ]
 
 # credentialRoot    : 1.1.1 ~ 1.1.3
@@ -34,7 +35,7 @@ __all__ = [
 # overAuthorityUser : 2.1.1
 # overAuthorityGroup: 2.1.2
 # overAuthorityRole : 2.1.3
-
+# unUsingiam       : 2.1.1
 # unUsedPolicy      : 2.2.2
 # unUsedRole        : 2.2.3
 # unUsedPolicy      : 2.2.4

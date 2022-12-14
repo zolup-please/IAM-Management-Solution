@@ -22,7 +22,7 @@ class getScanner:
         "2.1.1" : overAuthorityUser.overAuthorityUser,
         "2.1.2" : overAuthorityGroup.overAuthorityGroup,
         "2.1.3" : overAuthorityRole.overAuthorityRole,
-        "2.2.1" : dummy._dummy,
+        "2.2.1" : unUsingiam.unUsingUsered,
         "2.2.2" : unUsedGroup.unUsedGroup,
         "2.2.3" : unUsedRole.unUsedRole,
         "2.2.4" : unUsedPolicy.unUsedPolicy,

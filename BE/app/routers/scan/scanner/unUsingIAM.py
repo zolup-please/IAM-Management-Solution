@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
-from getCredentialReport import getCredentialReport
+from .getCredentialReport import getCredentialReport
 
 #2_3_3 미연결 User
-class unUsingUser(getCredentialReport):
+class unUsingUsered(getCredentialReport):
     def __init__(self):
         super().__init__()
         self.checkUnsingUser()
@@ -38,5 +38,5 @@ class unUsingUser(getCredentialReport):
             
         
 if __name__ == '__main__':
-    example = unUsingUser()
-    print(example.checkUnsingUser)
+    example = unUsingUsered()
+    print(example.result)
