@@ -43,4 +43,9 @@ async def StartScanning(checked: ChecklistModel):
 
 @router.get("/recent")
 async def GetRecentReports():
-    return getRecent.getRecent()
+    response = dict()
+    count, Reports = getRecent.getRecent()
+    response['count'] = count
+    response['Reports'] = Reports
+
+    return response
