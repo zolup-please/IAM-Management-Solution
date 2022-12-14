@@ -7,6 +7,10 @@ from pydantic import BaseModel
 
 from .scan import executeScanning
 
+import sys
+sys.path.append("..")
+from modules.mongoHandler import MongoHandler
+
 router = APIRouter(prefix="/scanning")
 
 class ChecklistModel(BaseModel):
@@ -26,7 +30,16 @@ async def ScanningList():
 async def StartScanning(checked: ChecklistModel):
     report = executeScanning.executeScanning(checked.dict())
 
-    return report
+    database = 'capstone'
+    collection = 'recent'
+    mongo = MongoHandler(database, collection)
+    mongo.insert(report)
+    for item in mongo._getFindIterator():
+        print(item['Date'])
+    del mongo    
+    
+    return "Scanning finished"
+    # return report
 
 @router.get("/recent")
 async def GetRecentReports():

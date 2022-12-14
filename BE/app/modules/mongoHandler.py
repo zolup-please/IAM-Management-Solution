@@ -20,9 +20,9 @@ class MongoHandler:
         return self._mongo_collection.count()
         
     def insert(self, data):
-        if data is list:
+        if isinstance(data, list):
             self._mongo_collection.insert(data)
-        elif data is dict:
+        elif isinstance(data, dict):
             self._mongo_collection.insert_one(data)
 
     def find(self, condition):
