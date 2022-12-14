@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+#title{
+  font-family: 'Quantico', sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+}
+#Menu{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+  background-color: #EEEEF2;
+}
+#item:hover{
+  background-color: "white";
+}
+.Sidebar {
+
+  padding-top: 5px;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+.Recent-Scanning {
+  margin: 15px;
+  height: 90%;
+  width: 30%;
+}
+.IAM {
+  height: 85%;
+  width: 70%;
+}
+
+.IAM_Info {
+  margin: 15px;
+  height: 70%;
+}
+
+.IAM_Change {
+  padding-top: 30px;
+  margin: 15px;
+  height: 30%;
+}
+#list-item:hover{
+  background-color: white;
+  cursor: default;
+}
+#scan .ps-submenu-expand-icon css-1cuxlhl{
+  display: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
