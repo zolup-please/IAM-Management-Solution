@@ -1,11 +1,11 @@
 import os
 
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 from fastapi import FastAPI
 
 from routers import dashboard, scanning, monitoring
 
-load_dotenv(verbose=True)
+#load_dotenv(verbose=True)
 
 app = FastAPI()
 
