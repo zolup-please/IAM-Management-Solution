@@ -21,4 +21,6 @@ def getRecent():
         del item['_id']
         Report.append(item)
     
+    del mongo
+
     return count, Report
