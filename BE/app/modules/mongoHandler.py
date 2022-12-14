@@ -17,8 +17,15 @@ class MongoHandler:
         self._mongo_collection = self._mongo_db[self._collection]
 
     # condition
-    def count(self):
+    def count_documents(self, condition=None):
         return self._mongo_collection.count_documents()
+
+    # test
+    def estimated_document_count(self):
+        return self._mongo_collection.estimated_document_count()
+
+    def get_recent_N_Iterator(self, N):
+        return self._mongo_collection.find().sort("_id", pymongo.DESCENDING).limit(N)
         
     def insert(self, data):
         if isinstance(data, list):
@@ -41,5 +48,14 @@ class MongoHandler:
 
     def update(self, condition, data):
         self._mongo_collection.update(condition, {"$set": data})
+
+    
+
+    def get_recent_N(collection, N):
+        # collection : pymongo.collection.Collection 객체
+        # N : 조회할 데이터 개수
+
+        cursor = collection.find().sort("_id", pymongo.DESCENDING).limit(N)
+        return list(cursor)
 
 '''
