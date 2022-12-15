@@ -11,7 +11,7 @@ import fuckingJson from "./sample.json"
 export default function SimpleContainer_Scan() {
     const [data, setData] = useState(fuckingJson);
     const fetchData = () => {
-      const url = `https://cors-anywhere.herokuapp.com/http://43.200.7.198:8000/scanning/recent`;
+      const url = `https://cors-anywhere.herokuapp.com/http://52.78.94.58:8000/scanning/recent`;
       fetch(url)
         .then((response) => response.json())
         .then((responseData) => {

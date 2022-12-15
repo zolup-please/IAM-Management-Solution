@@ -5,3 +5,4 @@ __pycache__/
 scanning-script/
 
 mongotest.py
+BE/app/nohup.out

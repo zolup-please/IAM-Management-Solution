@@ -9,7 +9,7 @@ import { Typography } from "@mui/material";
 export default function SimpleContainer() {
     const [data, setData] = useState([]);
     const fetchData = () => {
-      const url = `https://cors-anywhere.herokuapp.com/http://43.200.7.198:8000/dashboard/`;;
+      const url = `https://cors-anywhere.herokuapp.com/http://52.78.94.58:8000/dashboard/`;;
       fetch(url)
         .then((response) => response.json())
         .then((responseData) => {
