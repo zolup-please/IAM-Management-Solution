@@ -106,6 +106,17 @@ function Scanning_Start() {
   const startScan=()=>{
     setOpen(true);
     CreateRequestBody();
+    fetch("https://cors-anywhere.herokuapp.com/http://43.200.7.198:8000/scanning/", {
+
+  method: "POST",
+   headers: {
+      'Content-Type': 'application/json',
+    },
+  body: JSON.stringify(request_body),
+})
+.then((response) => response.json())
+.then((result) => console.log(result));
+
    // alert("스캔을 시작합니다. ")
   }
   const resultPrint = (

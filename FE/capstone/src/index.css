@@ -18,6 +18,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
   background-color: #EEEEF2;
 }
+#item0:hover{
+  background-color: white;
+}
 #item:hover{
   background-color: white;
   cursor: default;

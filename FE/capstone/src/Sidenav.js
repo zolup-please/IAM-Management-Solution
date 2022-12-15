@@ -9,11 +9,11 @@ const Sidenav = () => {
     <>
       <Sidebar id="Menu">
         <Menu>
-          <MenuItem routerLink={<Link to="/"></Link>} id="item"> <Typography component="div" variant="h6">  Dashboard </Typography> </MenuItem>
-            <MenuItem routerLink={<Link to="/scan1"></Link>} id="item">
+          <MenuItem routerLink={<Link to="/"></Link>} id="item0"> <Typography component="div" variant="h6">  Dashboard </Typography> </MenuItem>
+            <MenuItem routerLink={<Link to="/scan1"></Link>} id="item0">
             <Typography component="div" variant="h6">Scanning</Typography>
             </MenuItem>
-            <MenuItem routerLink={<Link to="/scan2"></Link>} id="item">  <Typography component="div" variant="h6">Report </Typography> </MenuItem>
+            <MenuItem routerLink={<Link to="/scan2"></Link>} id="item0">  <Typography component="div" variant="h6">Report </Typography> </MenuItem>
         </Menu>
       </Sidebar>
     </>

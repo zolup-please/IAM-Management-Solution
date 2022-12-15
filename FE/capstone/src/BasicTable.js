@@ -57,24 +57,26 @@ export default function BasicTable(e) {
       
       let rows = [
       ];
+      console.log("<BasicTable>로 넘어온 데이터 :",e.data);
     Array.from(Object.keys(e.data.Report)).map((v)=>{
-        console.log(e.data.Report[v])
-            
-                if(Array.isArray(e.data.Report[v]) && e.data.Report[v].length > 0){
+                console.log(e.data.Report[v]);
+                  if(Array.isArray(e.data.Report[v])){
                     let str = e.data.Report[v];
-                    rows.push(createData(v,str[0])) 
-                    for(var i = 1; i<str.length; i++){
-                        rows.push(createData("",str[i]))
+                    if(str.length==0){
+                      rows.push(createData(v,"None")) 
+                    }else{
+                      console.log("str: ",str)
+                      rows.push(createData(v,str[0])) 
+                      for(var i = 1; i<str.length; i++){
+                          rows.push(createData("",str[i]))
+                      }
                     }
-                    
+
+                }else{
+                  rows.push(createData(v,e.data.Report[v]));
                 }
-            
-
-
-           
     })
-    console.log(rows);
-    console.log("idx : "+e.idx);
+
   return (
     <div style={{padding:10}}>
       <Typography component="div" variant="h5">{IdInfo.checkedList[e.idx]}</Typography>
@@ -88,6 +90,7 @@ export default function BasicTable(e) {
           </TableRow>
         </TableHead>
         <TableBody>
+          
           {rows.map((row) => (
             <TableRow
               key={row.name}

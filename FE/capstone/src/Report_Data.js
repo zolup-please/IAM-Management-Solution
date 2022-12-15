@@ -4,20 +4,19 @@ import BasicTable from './BasicTable';
 import "./index.css";
 
 export default function Report_Data(data) {
-//console.log(data.report);
+console.log(data.report);
   return (
     <div>
 {
-    Array.from(Object.keys(data.report)).map((e,i)=>(
-        <Menu>
-            <SubMenu label={e} >
-            <MenuItem style={{height: "100%"}} id="item">
-                <BasicTable data={data.report[e]} idx={e}></BasicTable>
-            </MenuItem>
-        </SubMenu>
-
-            
-        </Menu>
+  
+    Array.from(Object.keys(data.report)).filter(item =>'Report' in data.report[item]).map((e,i)=>(
+      <Menu>
+      <SubMenu label={e} >
+      <MenuItem style={{height: "100%"}} id="item">
+          <BasicTable data={data.report[e]} idx={e}></BasicTable>
+      </MenuItem>
+  </SubMenu>
+  </Menu>
     ))
     }
     </div>
