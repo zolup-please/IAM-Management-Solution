@@ -57,15 +57,16 @@ export default function BasicTable(e) {
       
       let rows = [
       ];
-      console.log("<BasicTable>로 넘어온 데이터 :",e.data);
+      console.log("<BasicTable>로 넘어온 데이터 :",JSON.stringify(e.data));
     Array.from(Object.keys(e.data.Report)).map((v)=>{
-                console.log(e.data.Report[v]);
+                console.log("v : ",v)
+                console.log("Report[v] : ",e.data.Report[v]);
                   if(Array.isArray(e.data.Report[v])){
-                    let str = e.data.Report[v];
+                    let str = JSON.stringify(e.data.Report[v]).split(",");
+                    console.log("key가 "+v+"인 리스트")
                     if(str.length==0){
                       rows.push(createData(v,"None")) 
                     }else{
-                      console.log("str: ",str)
                       rows.push(createData(v,str[0])) 
                       for(var i = 1; i<str.length; i++){
                           rows.push(createData("",str[i]))

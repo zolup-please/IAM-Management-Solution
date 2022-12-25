@@ -11,7 +11,7 @@ import fuckingJson from "./sample.json"
 export default function SimpleContainer_Scan() {
     const [data, setData] = useState(fuckingJson);
     const fetchData = () => {
-      const url = `https://cors-anywhere.herokuapp.com/http://52.78.94.58:8000/scanning/recent`;
+      const url = `https://cors-anywhere.herokuapp.com/http://3.36.51.8:8000/scanning/recent`;
       fetch(url)
         .then((response) => response.json())
         .then((responseData) => {
@@ -24,7 +24,7 @@ export default function SimpleContainer_Scan() {
   console.log("RECENT SCANNING DATA ",data);
   return (
     <Menu>
-    { Array.from(data).map((e)=>(
+    { Array.from(data).map((e,i)=>(
         <SubMenu id="scan" label={
         <SnackbarContent
         message={<Typography component="div" variant="h6">{e.Date}</Typography>}

@@ -106,7 +106,7 @@ function Scanning_Start() {
   const startScan=()=>{
     setOpen(true);
     CreateRequestBody();
-    fetch("https://cors-anywhere.herokuapp.com/http://52.78.94.58:8000/scanning/", {
+    fetch("https://cors-anywhere.herokuapp.com/http://3.36.51.8:8000/scanning/", {
 
   method: "POST",
    headers: {
